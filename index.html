@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Produto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="breadcrumbs">
+        Início > Feminino > Vestidos > <span class="highlight">Ver detalhes </span>
+      </div>
+  <div class="container">
+    <div class="product-details">
+      <div class="preview-images">
+        <img src="./Nova pasta/carrossel-img-prod-03.jpg" alt="Product Image 1" onclick="showPreview(0)">
+        <img src="./Nova pasta/carrossel-img-prod-02.jpg" alt="Product Image 2" onclick="showPreview(1)">
+        <img src="./Nova pasta/carrossel-img-prod-01.jpg" alt="Product Image 3" onclick="showPreview(2)">
+      </div>
+      <div class="product-images-container">
+        <div id="carousel">
+          <img src="./Nova pasta/carrossel-img-prod-03.jpg" alt="Product Image 1">
+          <img src="./Nova pasta/carrossel-img-prod-02.jpg" alt="Product Image 2">
+          <img src="./Nova pasta/carrossel-img-prod-01.jpg" alt="Product Image 3">
+        </div>
+      </div>
+      <div class="product-info">
+        <h2>Vestido Intense Manga Longa</h2>
+        <p class="ref">Ref: 00000000</p>
+        <div class="product-reviews">
+          <h3>Ver Avaliações</h3>
+          <div class="star-ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <form>
+          <p class="color-text">Escolha a cor:</p>
+          <div class="color-picker">
+            <input type="radio" id="color-blue" name="color" value="Azul" checked>
+            <label for="color-blue" style="background-color: #0C1B33;"></label>
+            <input type="radio" id="color-red" name="color" value="Vermelho">
+            <label for="color-red" style="background-color: #9B4D04;"></label>
+            <input type="radio" id="color-green" name="color" value="Verde">
+            <label for="color-green" style="background-color: #811BBF;"></label>
+          </div>
+          <p class="size-text">Escolha o tamanho:</p>
+          <div class="sizes">
+            <button type="button" class="size-btn">PP</button>
+            <button type="button" class="size-btn">P</button>
+            <button type="button" class="size-btn">M</button>
+            <button type="button" class="size-btn">G</button>
+            <button type="button" class="size-btn">GG</button>
+          </div>
+          <p class="table">Ver tabela de tamanhos</p>
+          <p class="last-chance">Últimos 2 produtos em estoque. Não perca esta chance!</p>
+        </form>
+        <div class="price">
+          <p class="original-price">R$97,20</p>
+          <p class="new-price">R$87,48</p>
+        </div>
+        <p class="installment">Parcelados em até 4x sem juros no cartão</p>
+        <button type="button" class="add-to-cart-btn">
+          <img src="./Nova pasta/cart.png" alt="Ícone de carrinho">
+          Adicionar ao carrinho
+        </button>
+        <div class="delivery-details">
+          <p>Calcule o prazo e o valor da entrega</p>
+          <div class="input-container">
+            <input type="text" class="input-cep" placeholder="Digite o CEP">
+            <button class="calculate-btn">Calcular</button>
+          </div>
+          <p class="delivery-info"></p>
+        </div>
+
+        <div class="payment-returns">
+          <div class="expandable-field">
+            <p class="expandable-title">Formas de pagamento <img src="./Nova pasta/downarrow.png" class="arrow"></p>
+            <div class="expandable-content" style="display: none;">
+              <p>Aceitamos pagamentos com cartão de crédito, débito, boleto bancário e transferência bancária.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="expandable-field">
+            <p class="expandable-title">Trocas e Devoluções <img src="./Nova pasta/downarrow.png" class="arrow"></p>
+            <div class="expandable-content" style="display: none;">
+              <p>Oferecemos política de trocas e devoluções dentro do prazo de 30 dias após a compra, desde que o produto esteja em perfeitas condições.</p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extra-details">
+    <div class="details">
+      <div class="titles">
+        <p class="tittle">Detalhes do produto</p>
+        <p class="tittle2">Características do Produto</p>
+      </div>
+      <p class="text1">
+        O nosso modelo de vestido Intense com certeza é a tendência do momento! Com um corte justo no corpo, ele realça suas curvas de forma leve e sensual.
+        Feito com uma combinação de tecidos de alta qualidade, incluindo lycra, poliéster e algodão, o vestido Intense proporciona um conforto excepcional.
+        O design sem estampa adiciona um toque minimalista e versátil ao seu look, perfeito para ocasiões casuais.
+        Seja para um encontro descontraído ou uma tarde entre amigos, este vestido é a escolha certa para um estilo sensual e sofisticado ao mesmo tempo.
+      </p>
+    </div>
+  </div>
+
+  <div class="related-products">
+    <p class="tittle-related">Produtos que você pode gostar</p>
+    <div id="related-carousel" class="related-carousel">
+      <div class="related-item">
+        <img src="./Nova pasta/prd-que-vc-pode-gostar-04.png" alt="Related Product 1">
+        <p class="product-name">Blazer Off White</p>
+        <p class="old-price">R$158,00</p>
+        <p class="new1-price">R$140,70</p>
+      </div>
+      <div class="related-item">
+        <img src="./Nova pasta/prd-que-vc-pode-gostar-03.png" alt="Related Product 2">
+        <p class="product-name">Jaqueta de Couro</p>
+        <p class="old-price">R$158,00</p>
+        <p class="new1-price">R$118,50</p>
+      </div>
+      <div class="related-item">
+        <img src="./Nova pasta/prd-que-vc-pode-gostar-02.png" alt="Related Product 3">
+        <p class="product-name">Calça Wide Leg Destroyed</p>
+        <p class="old-price">R$158,00</p>
+        <p class="new1-price">R$136,80</p>
+      </div>
+      <div class="related-item">
+        <img src="./Nova pasta/prd-que-vc-pode-gostar-01.png" alt="Related Product 4">
+        <p class="product-name">Camisa Jeans com Bolsos</p>
+        <p class="old-price">R$110,40</p>
+        <p class="new1-price">R$93,84</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
